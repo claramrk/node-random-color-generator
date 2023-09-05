@@ -4,6 +4,26 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  chalk:
+    specifier: ^5.3.0
+    version: 5.3.0
+  color-ops:
+    specifier: ^2.0.0
+    version: 2.0.0
+  colorfy:
+    specifier: ^2.4.0
+    version: 2.4.0
+  colornames:
+    specifier: github:timoxley/colornames
+    version: github.com/timoxley/colornames/d61b23141e2659782ae941b2089b73f48aafdd67
+  random-hex:
+    specifier: ^1.0.2
+    version: 1.0.2
+  text-hex:
+    specifier: ^1.0.0
+    version: 1.0.0
+
 devDependencies:
   eslint-config-upleveled:
     specifier: ^5.0.4
@@ -839,6 +859,11 @@ packages:
       supports-color: 7.2.0
     dev: true
 
+  /chalk@5.3.0:
+    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
+
   /ci-info@3.8.0:
     resolution: {integrity: sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==}
     engines: {node: '>=8'}
@@ -871,6 +896,14 @@ packages:
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
+
+  /color-ops@2.0.0:
+    resolution: {integrity: sha512-GA3z7NGtUf3p7c71lsLJaGh0UYbUJmMw5mSquwpB3Ptkoexyz1cWH09Y/tLC6fZOSunqDJP3nz0u5/CVXylNuw==}
+    dev: false
+
+  /colorfy@2.4.0:
+    resolution: {integrity: sha512-OhYUs90rqs5YghABfZ9gZ3iTuvOq6vVS3C1KWg5klw4vQxP3PK/YFlwJBEJPsJPQoOZK+MH0H0OMXHfoamwuUg==}
+    dev: false
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -2348,6 +2381,10 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
+  /random-hex@1.0.2:
+    resolution: {integrity: sha512-MZa4hZIAFdVV/mzB1YZjdwrjzsjuYzR7gY1R9GDCQqGJYbbyQHp9+uS3T3vmhYM+GagELvufkE1eD0T1nSS1uQ==}
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
@@ -2628,6 +2665,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /text-hex@1.0.0:
+    resolution: {integrity: sha512-uuVGNWzgJ4yhRaNSiubPY7OjISw4sw4E5Uv0wbjp+OzcbmVU/rsT8ujgcXJhn9ypzsgr5vlzpPqP+MBBKcGvbg==}
+    dev: false
+
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
@@ -2847,3 +2888,9 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/timoxley/colornames/d61b23141e2659782ae941b2089b73f48aafdd67:
+    resolution: {tarball: https://codeload.github.com/timoxley/colornames/tar.gz/d61b23141e2659782ae941b2089b73f48aafdd67}
+    name: colornames
+    version: 1.1.1
+    dev: false
