@@ -13,7 +13,7 @@ if (userInput) {
     const color = colornames.get(userInput);
 
     const hexColorUserInput = color.value;
-    const hexColorStringUserInput = `${hexColorUserInput}`;
+    const hexColorStringUserInput = hexColorUserInput;
 
     const textUserInput = `###############################
 ###############################
@@ -32,8 +32,7 @@ if (userInput) {
       'Wrong format. Please input colors in the following format: luminosity+color, e.g. darkred',
     );
   } else {
-
-  /*
+    /*
   // ask - doesnt work
   else if (userInput === 'ask') {
     console.log(
@@ -48,7 +47,7 @@ if (userInput) {
 } else {
   // generate random
   const hexColorRandom = randomHex.generate();
-  const hexColorStringRandom = `${hexColorRandom}`;
+  const hexColorStringRandom = hexColorRandom;
   const textRandom = `###############################
 ###############################
 ###############################
