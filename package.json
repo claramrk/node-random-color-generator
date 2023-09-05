@@ -11,15 +11,13 @@
   "author": "Clara",
   "license": "ISC",
   "devDependencies": {
+    "@types/colornames": "^1.1.2",
     "eslint-config-upleveled": "^5.0.4",
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "color-ops": "^2.0.0",
-    "colorfy": "^2.4.0",
     "colornames": "github:timoxley/colornames",
-    "random-hex": "^1.0.2",
-    "text-hex": "^1.0.0"
+    "random-hex": "^1.0.2"
   }
 }

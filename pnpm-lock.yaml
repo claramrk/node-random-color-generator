@@ -8,23 +8,17 @@ dependencies:
   chalk:
     specifier: ^5.3.0
     version: 5.3.0
-  color-ops:
-    specifier: ^2.0.0
-    version: 2.0.0
-  colorfy:
-    specifier: ^2.4.0
-    version: 2.4.0
   colornames:
     specifier: github:timoxley/colornames
     version: github.com/timoxley/colornames/d61b23141e2659782ae941b2089b73f48aafdd67
   random-hex:
     specifier: ^1.0.2
     version: 1.0.2
-  text-hex:
-    specifier: ^1.0.0
-    version: 1.0.0
 
 devDependencies:
+  '@types/colornames':
+    specifier: ^1.1.2
+    version: 1.1.2
   eslint-config-upleveled:
     specifier: ^5.0.4
     version: 5.0.4(@babel/eslint-parser@7.22.15)(@next/eslint-plugin-next@13.4.19)(@types/eslint@8.44.2)(@types/node@20.5.9)(@types/react-dom@18.2.7)(@types/react@18.2.21)(@typescript-eslint/eslint-plugin@6.6.0)(@typescript-eslint/parser@6.6.0)(eslint-import-resolver-typescript@3.6.0)(eslint-plugin-import@2.28.1)(eslint-plugin-jsx-a11y@6.7.1)(eslint-plugin-jsx-expressions@1.3.1)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint-plugin-security@1.7.1)(eslint-plugin-sonarjs@0.20.0)(eslint-plugin-testing-library@5.11.1)(eslint-plugin-unicorn@48.0.1)(eslint-plugin-upleveled@2.1.9)(eslint@8.48.0)(typescript@5.2.2)
@@ -377,6 +371,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@types/colornames@1.1.2:
+    resolution: {integrity: sha512-tq8AZME3IzZDtW/xpgk6EjqMCtIy5c8/YthsRDSkfj10O8y7QNpD5A22GQf5ziB4OaX7u1jtWu5werbjAKFleQ==}
     dev: true
 
   /@types/eslint@8.44.2:
@@ -896,14 +894,6 @@ packages:
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
-
-  /color-ops@2.0.0:
-    resolution: {integrity: sha512-GA3z7NGtUf3p7c71lsLJaGh0UYbUJmMw5mSquwpB3Ptkoexyz1cWH09Y/tLC6fZOSunqDJP3nz0u5/CVXylNuw==}
-    dev: false
-
-  /colorfy@2.4.0:
-    resolution: {integrity: sha512-OhYUs90rqs5YghABfZ9gZ3iTuvOq6vVS3C1KWg5klw4vQxP3PK/YFlwJBEJPsJPQoOZK+MH0H0OMXHfoamwuUg==}
-    dev: false
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -2664,10 +2654,6 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
     dev: true
-
-  /text-hex@1.0.0:
-    resolution: {integrity: sha512-uuVGNWzgJ4yhRaNSiubPY7OjISw4sw4E5Uv0wbjp+OzcbmVU/rsT8ujgcXJhn9ypzsgr5vlzpPqP+MBBKcGvbg==}
-    dev: false
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
