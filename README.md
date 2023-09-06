@@ -2,6 +2,14 @@
 
 ##Functionality
 
+- User requests node index.js --> a box with a random color is returned with the according hex code in the middle
+- User requests node index.js color e.g. node index.js red --> a box in the color is returned, with the according hex code in the middle
+- User requests node index.js luminosity+color e.g. node index.js darkred --> a box in the color and luminosity is created, with the according hex code in the middle
+- Error messages:
+  -- If a user input in the wrong format is submitted, the program will return an error message prompting the user to put in the request in the supported format
+  -- If a user requests a color that is not supported, the user will be prompted to request a different color.
+
+##Task
 Create an application that will return a random color in the command line. It should work like this: When a user enters node index.js in the command line, a block of approximately 31x9 # characters colored with a random color (using hex code, e.g. #ff0000) should be generated.
 
 In addition to node index.js, it should also be able to accept the request for a:
@@ -14,13 +22,3 @@ In addition to node index.js, it should also be able to accept the request for a
 Stretch goals
 if a user types "ask" instead of a color name, print questions to ask the user for the name of the color and the luminosity
 If a user types a size in the format of WWxHH (eg. 31x9) before the color and luminosity, it will use this as the size of the box
-
-##Tasks
-[X]Set up variable to use user input
-[X]Find library with colors and hex code assigned to it
-[X] write output text
-[] create function for random color
-[] create function for hue input
-[] create function for luminosity input
-[]create questions and functionality for "ask"
-[]create questions and functionality for "format"
