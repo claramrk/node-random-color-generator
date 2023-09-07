@@ -5,7 +5,8 @@
 - User requests node index.js --> a box with a random color is returned with the according hex code in the middle
 - User requests node index.js color e.g. node index.js red --> a box in the color is returned, with the according hex code in the middle
 - User requests node index.js color + luminosity e.g. node index.js red dark --> a box in the color and luminosity is created, with the according hex code in the middle
-- User requests node index.js "ask" e.g. node index.js ask --> a question to ask the user for the name of the color and the luminosity is printed
+- User requests node index.js ask --> a question to ask the user for the name of the color and the luminosity is printed
+- User requests node index.js WWxHH e.g. node index.js 31x9 --> the format of WWxHH (eg. 31x9) will be used as the size of the box (still buggy)
 
 ##Task
 Create an application that will return a random color in the command line. It should work like this: When a user enters node index.js in the command line, a block of approximately 31x9 # characters colored with a random color (using hex code, e.g. #ff0000) should be generated.
