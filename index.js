@@ -1,6 +1,5 @@
 import { argv } from 'node:process';
 import chalk from 'chalk';
-import * as colornames from 'colornames';
 import * as randomHex from 'random-hex';
 import randomColor from 'randomcolor';
 
@@ -24,7 +23,7 @@ if (userInput) {
     userInput !== 'ask' &&
     !userInput.includes('x')
   ) {
-    //hashbox - works
+    // hashbox - works
     const textUserInput = `###############################
 ###############################
 ###############################
