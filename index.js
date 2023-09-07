@@ -30,21 +30,11 @@ if (userInput) {
 
     const colorForTextUserInput = chalk.hex(hexColorUserInput);
     console.log(colorForTextUserInput(textUserInput));
-  } else if (userInputGeneral.length > 3) {
-    console.log(
-      'Wrong format. Please input colors in the following format: luminosity+color, e.g. darkred',
-    );
-  } else {
-    /*
-  // ask - doesnt work
-  else if (userInput === 'ask') {
-    console.log(
-      'What color and luminosity would you like? Enter it in the following format: luminosity+color, e.g. darkred',
-    );
   }
-  */
+  // ask - doesnt work
+  else if (userInputGeneral.length >= 3 && userInput === 'ask') {
     console.log(
-      'This color is not in our library. Please input colors in the following format: luminosity+color, e.g. darkred',
+      'What color and luminosity would you like? Enter it in the following format: node index.js color + luminosity',
     );
   }
 } else {
