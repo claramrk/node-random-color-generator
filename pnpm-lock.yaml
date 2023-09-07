@@ -14,6 +14,9 @@ dependencies:
   random-hex:
     specifier: ^1.0.2
     version: 1.0.2
+  randomcolor:
+    specifier: ^0.6.2
+    version: 0.6.2
 
 devDependencies:
   '@types/colornames':
@@ -2373,6 +2376,10 @@ packages:
 
   /random-hex@1.0.2:
     resolution: {integrity: sha512-MZa4hZIAFdVV/mzB1YZjdwrjzsjuYzR7gY1R9GDCQqGJYbbyQHp9+uS3T3vmhYM+GagELvufkE1eD0T1nSS1uQ==}
+    dev: false
+
+  /randomcolor@0.6.2:
+    resolution: {integrity: sha512-Mn6TbyYpFgwFuQ8KJKqf3bqqY9O1y37/0jgSK/61PUxV4QfIMv0+K2ioq8DfOjkBslcjwSzRfIDEXfzA9aCx7A==}
     dev: false
 
   /react-is@16.13.1:

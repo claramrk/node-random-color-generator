@@ -2,19 +2,22 @@ import { argv } from 'node:process';
 import chalk from 'chalk';
 import * as colornames from 'colornames';
 import * as randomHex from 'random-hex';
+import randomColor from 'randomcolor';
 
 // get user input
 const userInputGeneral = argv;
 const userInput = argv[2];
+const userInputLuminosity = argv[3];
 
 if (userInput) {
-  if (userInputGeneral.length === 3 && userInputGeneral !== 'ask') {
-    // generate on userinput
-    const color = colornames.get(userInput);
+  if (userInputGeneral.length >= 3 && userInput !== 'ask') {
+    // generate hex - works
+    const hexColorUserInput = randomColor({
+      luminosity: userInputLuminosity,
+      hue: userInput,
+    });
 
-    const hexColorUserInput = color.value;
-    const hexColorStringUserInput = hexColorUserInput;
-
+    //hashbox - works
     const textUserInput = `###############################
 ###############################
 ###############################
@@ -25,7 +28,7 @@ if (userInput) {
 ###############################
 ###############################`;
 
-    const colorForTextUserInput = chalk.hex(hexColorStringUserInput);
+    const colorForTextUserInput = chalk.hex(hexColorUserInput);
     console.log(colorForTextUserInput(textUserInput));
   } else if (userInputGeneral.length > 3) {
     console.log(
@@ -45,9 +48,8 @@ if (userInput) {
     );
   }
 } else {
-  // generate random
+  // generate random - works!
   const hexColorRandom = randomHex.generate();
-  const hexColorStringRandom = hexColorRandom;
   const textRandom = `###############################
 ###############################
 ###############################
@@ -58,6 +60,6 @@ if (userInput) {
 ###############################
 ###############################`;
 
-  const colorForTextRandom = chalk.hex(hexColorStringRandom);
+  const colorForTextRandom = chalk.hex(hexColorRandom);
   console.log(colorForTextRandom(textRandom));
 }
