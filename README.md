@@ -1,23 +1,50 @@
-#Node.js Random Color Generator
+# Random Color Generator CLI
 
-##Functionality
+## Overview
 
-- User requests node index.js --> a box with a random color is returned with the according hex code in the middle
-- User requests node index.js color e.g. node index.js red --> a box in the color is returned, with the according hex code in the middle
-- User requests node index.js color + luminosity e.g. node index.js red dark --> a box in the color and luminosity is created, with the according hex code in the middle
-- User requests node index.js ask --> a question to ask the user for the name of the color and the luminosity is printed
-- User requests node index.js WWxHH e.g. node index.js 31x9 --> the format of WWxHH (eg. 31x9) will be used as the size of the box (still buggy)
+Welcome to the Random Color Generator CLI, a command-line application designed to bring random colors to your command line interface.
 
-##Task
-Create an application that will return a random color in the command line. It should work like this: When a user enters node index.js in the command line, a block of approximately 31x9 # characters colored with a random color (using hex code, e.g. #ff0000) should be generated.
+## Features
 
-In addition to node index.js, it should also be able to accept the request for a:
+### Basic Functionality
 
-- hue (e.g. green or red or blue)
-- luminosity (e.g. light or dark)
+- **Generate Random Color Block:**
+  - Upon entering `node index.js` in the command line, a 31x9 block of # characters colored with a random hex code is generated and displayed.
 
-...and then generate random colors that match those choices.
+- **Color Customization:**
+  - Users can specify color preferences using additional arguments:
+    - `node index.js hue=<color>`: Generates random colors within the specified hue (e.g., red, green, blue).
+    - `node index.js luminosity=<type>`: Generates random colors with the specified luminosity (e.g., light or dark).
 
-Stretch goals
-if a user types "ask" instead of a color name, print questions to ask the user for the name of the color and the luminosity
-If a user types a size in the format of WWxHH (eg. 31x9) before the color and luminosity, it will use this as the size of the box
+### Implementation
+
+1. **Command Line Arguments:**
+   - Parses command line arguments to handle requests for specific hue and luminosity.
+
+2. **Color Generation:**
+   - Utilizes a random color generator library to generate hex codes for the color block.
+
+3. **Block Rendering:**
+   - Implements a rendering mechanism to display a 31x9 block of # characters with the generated color.
+
+## How to Run
+
+1. **Clone the Repository:**
+   - `git clone <repository-url>`
+
+2. **Navigate to the Project Directory:**
+   - `cd random-color-generator-cli`
+
+3. **Install Dependencies:**
+   - `npm install`
+
+4. **Generate Random Color Block:**
+   - Run `node index.js` to generate a 31x9 color block with a random hex code.
+
+5. **Customize Colors:**
+   - For hue customization, use `node index.js hue=<color>` (e.g., `node index.js hue=red`).
+   - For luminosity customization, use `node index.js luminosity=<type>` (e.g., `node index.js luminosity=dark`).
+
+Feel free to explore the codebase, contribute improvements, or use it as a reference for your own projects. If you have suggestions or find ways to enhance the implementation, don't hesitate to open an issue or submit a pull request.
+
+Happy coding!
